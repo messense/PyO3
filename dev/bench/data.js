@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1622027195288,
+  "lastUpdate": 1622027200149,
   "repoUrl": "https://github.com/messense/pyo3",
   "entries": {
     "bench_pyobject": [
@@ -155,6 +155,44 @@ window.BENCHMARK_DATA = {
             "name": "extract_hashbrown_set",
             "value": 4762824,
             "range": "± 144647",
+            "unit": "ns/iter"
+          }
+        ]
+      }
+    ],
+    "bench_list": [
+      {
+        "commit": {
+          "author": {
+            "email": "messense@icloud.com",
+            "name": "messense",
+            "username": "messense"
+          },
+          "committer": {
+            "email": "messense@icloud.com",
+            "name": "messense",
+            "username": "messense"
+          },
+          "distinct": true,
+          "id": "0f249dd61315e74a97f052d90f532a388f051835",
+          "message": "Add automated continuous benchmarking",
+          "timestamp": "2021-05-26T19:01:53+08:00",
+          "tree_id": "1aef1933cd529bd002279f658af414586fee2f30",
+          "url": "https://github.com/messense/pyo3/commit/0f249dd61315e74a97f052d90f532a388f051835"
+        },
+        "date": 1622027173172,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "iter_list",
+            "value": 2143166,
+            "range": "± 96513",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "list_get_item",
+            "value": 1007201,
+            "range": "± 75266",
             "unit": "ns/iter"
           }
         ]
